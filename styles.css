@@ -1,0 +1,64 @@
+:root{
+    --dark: #4e4f4e;
+    --darker: #3e3e3e;
+    --grey: #686968;
+    --lighter: #c7c7c7;
+    --light: #adaaaa;
+    --cyan: #4795bf;
+    --dangerous-red: #db2a44;
+    --sun: #ebb734;
+}
+
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url("./image.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    margin-top: 20vh;
+    min-height: 80vh;
+}
+
+.main {
+    align-items: center;
+    margin: auto 20vw auto 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 50px;
+    border-radius: 0% 20% 0% 20%;
+    background: linear-gradient(to bottom, var(--sun), var(--cyan));
+    font-size: 2rem;
+    min-height: 50vh;
+    min-width: 350px;
+    max-width: 700px;
+    box-shadow: 0px 20px 30px var(--darker);
+}
+
+#search-box {
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, var(--dark), var(--grey));
+    font-size: 1.2rem;
+    color: var(--lighter);
+    border-radius: 16px 8px 16px 0%;
+    min-height: 3rem;
+    border-left: 2px solid var(--cyan);
+    border-bottom: 3px solid var(--cyan);
+}
+
+.temp {
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: -2px 5px rgba(255,255,255,0.25);
+}
+
+.weather-type {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
